@@ -1,0 +1,24 @@
+footer {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    width: 5%;
+    height: 5%;
+    margin: 0 10px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #333333;
+  }

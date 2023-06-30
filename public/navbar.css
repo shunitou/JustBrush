@@ -1,0 +1,140 @@
+nav {
+    font-family: none;
+    background-color: #161616;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* add this */
+  }
+    
+    .button-nav {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #424244b4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .button-nav:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    
+    nav a {
+      text-decoration: none;
+      display: flex;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: -11px;
+      transition: color 0.2s;
+    }
+    
+    nav a:hover {
+      color: #3f51b5;
+      color: #000;
+    }
+    
+    nav .logo img {
+      height: 85px;
+      width: auto;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: flex;
+      align-items: center;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav .auth a {
+      background-color: #424244b4;
+      border-radius: 4px;
+      color: #fff;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    
+    nav .auth a:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  
+    @media only screen and (min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  
+    @media only screen and (max-width: 767px) {
+      nav .menu-toggle {
+        display: block;
+        font-size: 18px;
+        background-color: #424244b4;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        position: absolute;
+        cursor: pointer;
+        left: 50%; /* center horizontally */
+        transform: translateX(-50%);
+        margin-top: 3px;
+      }
+    
+   
+    
+    
+    .nav-menu {
+      display: none;
+    }
+    
+    .nav-menu.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #161616;
+      padding: 1rem;
+    }
+    
+    .nav-menu li {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    
+    .nav-menu li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 0.5rem;
+      display: block;
+    }
+    
+    .nav-menu li a:hover {
+      background-color: #444;
+    }
+    
+    .auth {
+      margin-top: 1rem;
+    }
+    
+    .auth a {
+      font-size: 20px;
+      margin-left: 0;
+    }
+  }

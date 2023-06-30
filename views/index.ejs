@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/public/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/public/index.css">
+  <link rel="stylesheet" type="text/css" href="/public/footer.css">
+  <title>Image Upload</title>
+</head>
+<body>
+  <%- include('partials/navbar.ejs') %>
+
+  <div class="container">
+    <h1>JustBrush upload</h1>
+    <form action="/images/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" required>
+      </div>
+      <div class="form-group">
+        <label for="filename">Name:</label>
+        <input type="text" id="filename" name="filename" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+  <%- include('partials/footer.ejs') %>
+</body>
+</html>
