@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/public/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/public/register.css">
+  <link rel="stylesheet" type="text/css" href="/public/footer.css">
   <title>User Registration</title>
 </head>
 <body>
+  <%- include('partials/navbar.ejs') %>
   <h1>User Registration</h1>
   <form action="/register" method="POST">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required><br>
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required><br>
-    <button type="button" id="connect-wallet-btn">Connect Wallet</button>
-    <input type="hidden" id="wallet-address" name="walletAddress">
+    <button type="button" id="connect-wallet-btn" required>Connect Wallet</button>
+    <input type="hidden" id="wallet-address" name="walletAddress"><br>
     <button type="submit">Register</button>
   </form>
 
   <script src="/public/register.js"></script>
+  
+  <%- include('partials/footer.ejs') %>
 </body>
 </html>
